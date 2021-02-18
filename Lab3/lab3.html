@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                min-width: 500px;
+        }
+            .top{
+                background-color: black;
+                font-size: 12px;
+                font-family: Calibri light;
+                color: #858c8a;
+                padding: 1px;
+            }
+            h1{
+                position: relative;
+                left: 100px;
+            }
+            .head{
+                font-size: 30px;
+                font-family: Calibri light; 
+                position: relative;
+                top: 30px;
+                left: 350px;
+            }
+            input{
+                position: relative;
+                top: 25px;
+                left: 405px;
+                width: 700px;
+                height: 30px;
+                border: 1px solid rgb(177, 172, 172);
+                border-radius: 2px;
+            }
+            .addBtn{
+                font-size: 14px;
+                font-family: Arial;
+                cursor: pointer;
+                background: #337ab7;
+                position: relative;
+                left: 430;
+                top: 26px;
+                color: white;
+                padding: 7px;
+                border-radius: 2px;
+            }
+            .addBtn:hover{
+                background-color: #3379b7bd
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+            }
+            ul li{
+                font-family: Calibri light;
+                cursor: pointer;
+                padding: 20px 8px 20px 40px;
+                list-style-type: none;
+                background: white;
+                font-size: 14px;
+                transition: 0.2s;
+                width: 850px;
+                border: 1px solid rgb(177, 172, 172);
+                position: relative;
+                top: 70px;
+                left: 350px;
+                
+            }
+            ul li:hover {
+                background: #ddd;
+            }
+            ul li.checked {
+                background: grey;
+                color: #fff;
+                text-decoration: line-through;
+            }
+            ul li.checked::before {
+                content: '';
+                position: absolute;
+                border-color: #fff;
+                border-style: solid;
+                border-width: 0 2px 2px 0;
+                top: 16px;
+                left: 16px;
+                transform: rotate(45deg);
+                height: 15px;
+                width: 7px;
+            }
+            .close {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 12px 16px 12px 16px;
+                }
+        
+            .close:hover {
+                background-color: red;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <h1>ToDo List</h1>
+        </div>
+        <h2 class="head">ToDo List</h2>
+        <input type="text" id="myInput" placeholder="New Task">
+        <span onclick="newElement()" class="addBtn">Add</span>
+        <ul id="myUL">
+            <li>First item</li>
+            <li class="checked">Second item</li>
+            <li>Third item</li>
+          </ul>
+          <script src="a.js"></script>
+    </body>
+</html>
